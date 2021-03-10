@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #ffc500;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding-top: 7.75rem; /* empura o conteúdo da pagina para baixo da barra de nav */
+}
+
+/* Estilização padrão para todas as listas */
+
+ul { 
+    display: flex; /* coloca a lista um ao lado do outro */
+    list-style: none; /* tira a decoração padrão da lista */
+    padding-left: 0;
+}
+
+
+
+/* Barra de navegação */
+
+.navbar {
+    position: fixed; /* para deixar a caixa de navegação fixa quando rolar a pag */
+
+    /* Alinhamento da barra */
+    display: grid; /* transformar os conteúdos de dentro da caixa (navbar) em blocos */
+    grid-template-columns: 1fr 9fr; /* escolhe quantas colunas cada bloco deve ocupar */
+    
+    align-items: center; /* Alinha horizontalmente o conteúdo no centro */
+
+    top: 0;
+    left: 0;
+    
+    width: 100vw; /* largura */
+    height: 7.75rem; /* altura */
+
+    padding: 0 1rem;
+
+    background-color: #000; /* vermelho / verde / azul / transparência */
+    color: #fff;
+}
+
+
+/* MENU - Barra de navegação */
+
+.navbar__links {
+    justify-content: end; /* Propriedade de alinhamento para elementos que estão dentro de um grid - ulilizando "end" o conteúdo se alinha ao final (direita) */
+
+}
+
+.navbar__links li {
+    font-size: .875rem;
+    margin-right: 3rem;
+    text-transform: uppercase;
+}
+
+.navbar__links a {
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none; /* tira o estilo de link da palavra */
+}
+
+.navbar__links a:hover {
+    color: var(--color-primary);
+}
+
+
+/* LOGO "STUDION" */
+
+.logo-studion {
+    font-size: 2.375rem;
+    font-weight: 900;
+    line-height: 1ch; /* Ajusta a o espaçamento entre uma linha a outra */
+    
+    text-transform: uppercase;
+    text-align: right; /* alinhar texto a direita */
+}
+
+.copy--primary {
+    color: var(--color-primary);
+}
+
+.logo-studion__subtitle {
+    font-size: .875rem;
+    font-weight: 300;
+    
+    /*float: right;  para que a palavra eventos "flutue" e seja posicionado à direita */
+}
