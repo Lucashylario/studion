@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root { 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    
+    --color-primary: #ffc500;
+    --default-padding: 1rem;
+}
+
+body {
+    margin: 0;
+    padding-top: 7.75rem; /* empura o conteúdo da pagina para baixo da barra de nav */
+}
+
+/* Estilização padrão para todas as listas */
+
+ul { 
+    display: flex; /* coloca a lista um ao lado do outro */
+    list-style: none; /* tira a decoração padrão da lista */
+    padding-left: 0;
+}
+
+
+
+/* Barra de navegação */
+
+.navbar {
+    position: fixed; /* para deixar a caixa de navegação fixa quando rolar a pag */
+    z-index: 1; /* vai ajustar a barra de nav para que quando rolar a pag ela não fique por trás do banner */
+
+    /* Alinhamento da barra */
+    display: grid; /* transformar os conteúdos de dentro da caixa (navbar) em blocos */
+    grid-template-columns: 1fr 9fr; /* escolhe quantas colunas cada bloco deve ocupar */
+    
+    align-items: center; /* Alinha horizontalmente o conteúdo no centro */
+
+    top: 0;
+    left: 0;
+    
+    width: 100vw; /* largura */
+    height: 7.75rem; /* altura */
+
+    padding: 0 1rem;
+
+    background-color: #000; /* vermelho / verde / azul / transparência */
+    color: #fff;
+
+    
+}
+
+
+/* MENU - Barra de navegação */
+
+.navbar__links {
+    justify-content: end; /* Propriedade de alinhamento para elementos que estão dentro de um grid - ulilizando "end" o conteúdo se alinha ao final (direita) */
+
+}
+
+.navbar__links li {
+    font-size: .875rem;
+    margin-right: 3rem;
+    text-transform: uppercase;
+}
+
+.navbar__links a {
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none; /* tira o estilo de link da palavra */
+}
+
+.navbar__links a:hover {
+    color: var(--color-primary);
+}
+
+
+/* LOGO "STUDION" */
+
+.logo-studion {
+    font-size: 2.375rem;
+    font-weight: 900;
+    line-height: 1ch; /* Ajusta a o espaçamento entre uma linha a outra */
+    
+    text-transform: uppercase;
+    text-align: right; /* alinhar texto a direita */
+}
+
+.copy--primary {
+    color: var(--color-primary);
+}
+
+.logo-studion__subtitle {
+    font-size: .875rem;
+    font-weight: 300;
+    
+    /*float: right;  para que a palavra eventos "flutue" e seja posicionado à direita */
+}
+
+
+                /* Cabeçalho "HEADER" */
+
+                    /*Slide-Banner*/
+#slider {
+    background-color: #000;
+    color: #fff;
+                /* METODO PARA COLOCAR IMAGEM PELO CSS */
+    /* background-image: url('./images/banner.jpg');*/
+    /* background-size: cover;  Tamanho da imagem ("cover" ajusta a imagem para que ocupe toda a área da caixa sem deforma-la)*/
+    /* background-repeat: no-repeat;  Imagem não se repete */
+    /* background-position: center; Centralizar imagem */ 
+}
+
+.slide {
+    position: relative; /* "relative" faz com que o conteúdo de dentro da class "slide" não seja movida para fora de sua delimitação */
+
+    height: calc(100vh - 7.75rem); /* "calc" serve para calcular valores, no caso calcular altura exata que o header deve ocupar. ("100vh" é a altura total "-" menos os "7.75rem" da barra de navegação)*/
+}
+
+.slide__background-image {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover; /* Ajusta a imagem e tira a distoção ("cover" ajusta a imagem para que ocupe toda a área da caixa sem deforma-la) */
+    object-position: center; /*Centralizar imagem*/
+}
+
+.slide__copy {
+    position: absolute; /* "absolute" faz com que as informações que estão atrás do banner se sobrepunha a ela e fique por cima*/
+    top: 6.25rem;
+    left: 50vw;
+}
+
+                    /*Info-Banner*/
+
+.slide__copy h6 {
+    font-size: 0.9375rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.1875rem; /* Espaçamento entre uma letra e outra */
+}
+
+.slide__copy h2 {
+    font-size: 6.25rem;
+    text-transform: uppercase;
+    line-height: 6.25rem;
+}
+
+.slide__copy h2 span {
+    display: block;
+}
+
+
+                    /* Botão-Banner */
+
+.btn {
+    cursor: pointer;
+    padding: 1rem 2.5rem;
+    
+    border: 0.125rem solid #fff;
+    border-radius: 5rem;
+    
+    color: var(--color-primary);
+    background: unset; /* Resetar para um valor neutro */
+    
+    font-size: 0.9375rem;
+    font-weight: 900;
+    text-transform: uppercase;
+
+    transition: 0.5s all ease; /*transição para animação do botão. ("0.5s" tempo da anim. "all" tudo. "ease" curva de animação) */
+}
+
+.btn:hover, .btn:active, .btn:focus {
+    border-color: var(--color-primary);
+    background-color: var(--color-primary);
+    color: #fff;
+}
