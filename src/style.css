@@ -205,7 +205,6 @@ ul {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* REPEATE define o "auto-fill" número auto de colunas com responsividade, "minmax" valor minimo e máximo, "(300px, 1fr)" primeiro valor é o min e o segundo o valor máximo */
     place-items: center; /* Centraliza os grids no centro */
 
-    margin: 0;
     padding: 4.375rem 1rem;
 }
 
