@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Roboto&display=swap');
 
 * {
     box-sizing: border-box;
@@ -8,8 +8,11 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     
+    --color-copy: #333;
     --color-primary: #ffc500;
     --default-padding: 1rem;
+    
+    color: var(--color-copy);
 }
 
 body {
@@ -209,4 +212,54 @@ ul {
 .counter__container h3 small {
     display: block; /*Quebrar linha*/
     font-size: 1.25rem;
+}
+
+
+                    /* Sessão institutional */
+
+.institutional {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 3.125rem; /*Define espaçamento entre um elemento e outro */
+    align-items: center; /* centralizar conteúdo */
+
+    padding: 4.375rem;
+}
+
+.institutional__copy {
+    padding: 0 1.875rem;
+}
+
+.institutional__copy h6 {
+    font-size: 0.875rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+
+    margin: 0;
+}
+
+.institutional__copy h4 {
+    font-size: 1.5625rem;
+
+    margin-top: 1rem;
+}
+
+.institutional p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.6875rem;
+    margin-bottom: 0;
+    margin-bottom: 2.5rem;
+}
+
+.btn--institutional {
+    border-color: var(--color-primary);
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.btn--institutional:hover {
+    color: var(--color-copy);
+    background: unset;
 }
