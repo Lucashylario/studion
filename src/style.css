@@ -230,6 +230,10 @@ ul {
     padding: 4.375rem;
 }
 
+.institutional__image {
+    max-width: 550px;
+}
+
 .institutional__copy {
     padding: 0 1.875rem;
 }
