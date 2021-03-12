@@ -24,6 +24,11 @@ header, main, footer {
     overflow-x: clip; /* faz com que o conteúdo de uma sessão não ultrapasse seu limite */
 }
 
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
 /* Estilização padrão para todas as listas */
 
 ul { 
@@ -39,25 +44,25 @@ ul {
 .navbar {
     position: fixed; /* para deixar a caixa de navegação fixa quando rolar a pag */
     z-index: 1; /* vai ajustar a barra de nav para que quando rolar a pag ela não fique por trás do banner */
-
-    /* Alinhamento da barra */
-    display: grid; /* transformar os conteúdos de dentro da caixa (navbar) em blocos */
-    grid-template-columns: 1fr 9fr; /* escolhe quantas colunas cada bloco deve ocupar */
     
-    align-items: center; /* Alinha horizontalmente o conteúdo no centro */
-
     top: 0;
     left: 0;
+    width: 100%;
     
+    background-color: #000; /* vermelho / verde / azul / transparência */
+    color: #fff;
+}
+
+.navbar__container {
+            /* Alinhamento da barra */
+    display: grid; /* transformar os conteúdos de dentro da caixa (navbar) em blocos */
+    grid-template-columns: 1fr 9fr; /* escolhe quantas colunas cada bloco deve ocupar */
+    align-items: center; /* Alinha horizontalmente o conteúdo no centro */
+ 
     width: 100vw; /* largura */
     height: 7.75rem; /* altura */
 
     padding: 0 1rem;
-
-    background-color: #000; /* vermelho / verde / azul / transparência */
-    color: #fff;
-
-    
 }
 
 
