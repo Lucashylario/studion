@@ -273,11 +273,61 @@ ul {
 }
 
                 /* Sessão QUOTE */
-.quote { /* Efeito Parallax */
+.quote {
+            /* Efeito Parallax */
     background-image: url(./images/parallax.jpg);
-    min-height: 80vh;
+    /* min-height: 80vh;  transferido para o "quote__container" */
     background-attachment: fixed; /* Efeito parallax onde a imagem fica fixa no plano de fundo e a pág rola por cima */
     background-repeat: no-repeat;
     background-size: cover; /* Faz com que a imagem ocupe toda a área da sua sessão */
     background-position: center;
+}
+
+.quote__container {
+    display: grid;
+    align-items: center;
+    justify-items: end;
+
+    min-height: 80vh;
+}
+
+.quote__copy {
+    background-color: #fff;
+
+    padding: 5.625rem 4.375rem;
+}
+
+.quote__copy h6 {
+    font-size: 0.9375rem;
+    font-weight: 400;
+
+    letter-spacing: 0.1875rem;
+    line-height: 1.4375rem;
+
+    max-width: 54ch;
+
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.quote__copy h2 {
+    font-size: 5rem;
+    font-weight: 700;
+    
+    line-height: 5rem;
+    letter-spacing: -0.1875rem;
+
+    text-transform: uppercase;
+
+    margin: 1.875rem 0;
+}
+
+.quote__copy h2 span {
+    display: block; /* Quebrar linha */
+}
+
+.btn--quote {
+    color: var(--color-copy);
+    border-color: var(--color-copy);
+    background: unset;
 }
