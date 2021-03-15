@@ -273,7 +273,7 @@ ul {
 }
 
                 /* Sessão QUOTE */
-.quote {
+.quote { /* Efeito Parallax */
     background-image: url(./images/parallax.jpg);
     min-height: 80vh;
     background-attachment: fixed; /* Efeito parallax onde a imagem fica fixa no plano de fundo e a pág rola por cima */
