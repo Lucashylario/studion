@@ -271,3 +271,13 @@ ul {
     color: var(--color-copy);
     background: unset;
 }
+
+                /* Sessão QUOTE */
+.quote {
+    background-image: url(./images/parallax.jpg);
+    min-height: 80vh;
+    background-attachment: fixed; /* Efeito parallax onde a imagem fica fixa no plano de fundo e a pág rola por cima */
+    background-repeat: no-repeat;
+    background-size: cover; /* Faz com que a imagem ocupe toda a área da sua sessão */
+    background-position: center;
+}
