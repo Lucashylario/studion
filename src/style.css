@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Roboto&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/fontawesome.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css');
 
 * {
     box-sizing: border-box;
@@ -330,4 +332,115 @@ ul {
     color: var(--color-copy);
     border-color: var(--color-copy);
     background: unset;
+}
+
+
+                /* FOOTER */
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 0 1rem;
+    height: 19.2rem;
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(3, auto); /* 3 colunas, largura auto */
+    align-items: center;
+    padding: 5.25rem 0 3.75rem 0;
+}
+
+.footer .logo-studion {
+    justify-self: start; /* Faz com que o logo se alinhe à esquerda */
+    margin: 0;
+}
+
+.logo-studion__subtitle {
+    display: block; /* fazer a quebra do texto */
+}
+
+.footer__form {
+    /* justify-self: center; Faz com que o form se alinhe no centro */
+
+    display: grid;
+    place-items: center;
+    grid-template-columns: 9ch auto;
+
+    gap: 1.25rem;
+}
+
+.footer__form label {
+    font-size: 0.875rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.footer__email {
+    display: grid;
+    grid-template-columns: auto 3.375rem;
+    
+    width: 100%;
+}
+
+.footer__form input {
+    background-color: var(--color-primary);
+    border: unset;
+    padding: 1rem;
+
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.footer__form input::placeholder {
+    color: #000;
+}
+
+.footer__form input:focus {
+    outline: unset;
+}
+
+.footer__form button {
+    cursor: pointer;
+    border: unset;
+    height: 100%;
+    transition: 0.3s all ease;
+}
+
+.footer__form button:hover {
+    color: #fff;
+    background-color: var(--color-copy);
+}
+
+.footer__social {
+    justify-self: end; /* Faz com que o logo de sociais se alinhe à direita */
+}
+
+
+.footer__social a,
+.footer__social a:visited,
+.footer__social a:active{
+    color: #fff;
+    margin-left: 0.3rem;
+}
+
+.footer__social a .fa-twitter,
+.footer__social a .fa-twitter:visited,
+.footer__social a .fa-twitter:active{
+    color: #000;
+}
+
+.footer hr {
+    border-color: #fff4;
+    margin: 0;
+}
+
+.footer p{
+    text-align: center; /* centralizar o texto */
+
+    font-size: .875rem;
+    font-weight: 300;
+    margin: 2.5rem 0;
 }
