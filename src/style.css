@@ -87,6 +87,10 @@ ul {
     text-decoration: none; /* tira o estilo de link da palavra */
 }
 
+.navbar__links a.active {
+    color: var(--color-primary);
+}
+
 .navbar__links a:hover {
     color: var(--color-primary);
 }
@@ -114,6 +118,10 @@ ul {
     /*float: right;  para que a palavra eventos "flutue" e seja posicionado à direita */
 }
 
+.logo-studion a {
+    text-decoration: none; /* para tirar a linha do link */
+    color: #fff;
+}
 
                 /* Cabeçalho "HEADER" */
 
