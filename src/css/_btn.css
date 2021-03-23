@@ -1,0 +1,47 @@
+/* Botão-Banner */
+.btn {
+  cursor: pointer;
+  padding: 1rem 2.5rem;
+
+  border: 0.125rem solid #fff;
+  border-radius: 5rem;
+
+  color: var(--color-primary);
+  background: unset; /* Resetar para um valor neutro */
+
+  font-size: 0.9375rem;
+  font-weight: 900;
+  text-transform: uppercase;
+
+  transition: 0.5s all ease; /*transição para animação do botão. ("0.5s" tempo da anim. "all" tudo. "ease" curva de animação) */
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+
+                /* Botão section Institucional */
+
+.btn--institutional {
+border-color: var(--color-primary);
+background-color: var(--color-primary);
+color: #fff;
+}
+
+.btn--institutional:hover {
+color: var(--color-copy);
+background: unset;
+}
+
+
+                /* Botão section Cotação */
+.btn--quote {
+    color: var(--color-copy);
+    border-color: var(--color-copy);
+    background: unset;
+}

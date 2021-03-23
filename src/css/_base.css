@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+
+  color: var(--color-copy);
+}
+
+body {
+  margin: 0;
+  padding-top: 7.75rem; /* empura o conteúdo da pagina para baixo da barra de nav */
+}
+
+header,
+main,
+footer {
+  overflow-x: clip; /* faz com que o conteúdo de uma sessão não ultrapasse seu limite */
+}
+
+/* Estilização padrão para todas as listas */
+
+ul {
+  display: flex; /* coloca a lista um ao lado do outro */
+  list-style: none; /* tira a decoração padrão da lista */
+  padding-left: 0;
+}
+
+/* Container */
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* LOGO "STUDION" */
+
+.logo-studion {
+  font-size: 2.375rem;
+  font-weight: 900;
+  line-height: 1ch; /* Ajusta a o espaçamento entre uma linha a outra */
+
+  text-transform: uppercase;
+  text-align: right; /* alinhar texto a direita */
+}
+
+.logo-studion__subtitle {
+  font-size: 0.875rem;
+  font-weight: 300;
+
+  /*float: right;  para que a palavra eventos "flutue" e seja posicionado à direita */
+}
+
+.logo-studion a {
+  text-decoration: none; /* para tirar a linha do link */
+  color: #fff;
+}

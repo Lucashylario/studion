@@ -1,0 +1,51 @@
+/* Barra de navegação */
+
+.navbar {
+  position: fixed; /* para deixar a caixa de navegação fixa quando rolar a pag */
+  z-index: 1; /* vai ajustar a barra de nav para que quando rolar a pag ela não fique por trás do banner */
+
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  background-color: #000; /* vermelho / verde / azul / transparência */
+  color: #fff;
+}
+
+.navbar__container {
+  /* Alinhamento da barra */
+  display: grid; /* transformar os conteúdos de dentro da caixa (navbar) em blocos */
+  grid-template-columns: 1fr 9fr; /* escolhe quantas colunas cada bloco deve ocupar */
+  align-items: center; /* Alinha horizontalmente o conteúdo no centro */
+
+  width: 100vw; /* largura */
+  height: 7.75rem; /* altura */
+
+  padding: 0 1rem;
+}
+
+/* MENU - Barra de navegação */
+
+.navbar__links {
+  justify-content: end; /* Propriedade de alinhamento para elementos que estão dentro de um grid - ulilizando "end" o conteúdo se alinha ao final (direita) */
+}
+
+.navbar__links li {
+  font-size: 0.875rem;
+  margin-right: 3rem;
+  text-transform: uppercase;
+}
+
+.navbar__links a {
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none; /* tira o estilo de link da palavra */
+}
+
+.navbar__links a.active {
+  color: var(--color-primary);
+}
+
+.navbar__links a:hover {
+  color: var(--color-primary);
+}
