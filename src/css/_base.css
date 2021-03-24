@@ -11,7 +11,7 @@
 
 body {
   margin: 0;
-  padding-top: 7.75rem; /* empura o conteúdo da pagina para baixo da barra de nav */
+  /* padding-top: 7.75rem; empura o conteúdo da pagina para baixo da barra de nav */
 }
 
 header,

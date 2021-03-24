@@ -1,14 +1,16 @@
 /* Barra de navegação */
 
 .navbar {
-  position: fixed; /* para deixar a caixa de navegação fixa quando rolar a pag */
+  /* position: fixed;  para deixar a barra de navegação fixa quando rolar a pag */
+  position: absolute; /* barra de tarefa normal */
+  
   z-index: 1; /* vai ajustar a barra de nav para que quando rolar a pag ela não fique por trás do banner */
 
   top: 0;
   left: 0;
   width: 100%;
 
-  background-color: #000; /* vermelho / verde / azul / transparência */
+  /* background-color: #0005;  vermelho / verde / azul / transparência */
   color: #fff;
 }
 

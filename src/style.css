@@ -6,7 +6,9 @@
 @import "./css/_base.css";
 @import "./css/_utils.css";
 @import "./css/_btn.css";
+
 @import "./css/_navbar.css";
+@import "./css/_hero.css";
 @import "./css/_footer.css";
 
 @import "./css/_home.css";

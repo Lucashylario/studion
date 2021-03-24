@@ -14,9 +14,8 @@
 .slide {
   position: relative; /* "relative" faz com que o conteúdo de dentro da class "slide" não seja movida para fora de sua delimitação */
 
-  height: calc(
-    100vh - 7.75rem
-  ); /* "calc" serve para calcular valores, no caso calcular altura exata que o header deve ocupar. ("100vh" é a altura total "-" menos os "7.75rem" da barra de navegação)*/
+  /*height: calc(100vh - 7.75rem);  "calc" serve para calcular valores, no caso calcular altura exata que o header deve ocupar. ("100vh" é a altura total "-" menos os "7.75rem" da barra de navegação)*/
+  height: 90vh;
 }
 
 .slide__background-image {
