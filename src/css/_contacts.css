@@ -1,0 +1,88 @@
+.contato {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contato h3 {
+    margin: 0;
+    margin-bottom: 1.875rem;
+    font-size: 1.5625rem;
+}
+
+.contato__info h3:nth-of-type(2) {
+    margin-top: 3.75rem;
+}
+
+.contato__info,
+.contato__form {
+    padding: 4rem 0;
+}
+
+                /* Sessão "Liga pra gente" */
+
+.contato__info i {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+}
+
+.contato__info span {
+    display: grid;
+    grid-template-columns: 1.5rem auto;
+    gap: 0.625rem; /* espaço entre o icone e o número/endereço */
+    align-items: center; /* centralizar icones com os contatos */
+
+    font-family: "Roboto";
+    font-weight: 700;
+    line-height: 1.6875rem;
+}
+
+.contato__info__container,
+.contato__form__container {
+    width: 540px;
+}
+
+.contato__info__container {
+    float: right;
+    padding-right: 7.125rem;
+}
+
+                /* Sessão de "DEIXE SUA MENSAGEM" */
+
+.contato__form__container {
+    padding-left: 7.125rem;
+}
+
+.contato__form {   
+    background-color: #000;
+    color: #fff;
+}
+
+.contato__form label,
+.contato__form input {
+    display: block; /* Forçar a quebra de linhas (números de tel) */
+}
+
+.contato__form label {
+    font-weight: 700;
+}
+
+.contato__form input {
+    width: 100%;
+    margin-bottom: 1.875rem;
+    padding: 0.5rem 0;
+
+    background: unset;
+    border: unset;
+    border-bottom: 0.1rem solid #fff;
+
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.contato__form input:focus {
+    outline: unset; /* Tirar o efeito de focus/ninhas da caixa de digitação */
+}
+
+.contato__form button {
+    float: right; /* mover botão para direita */
+}

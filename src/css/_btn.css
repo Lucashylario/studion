@@ -18,7 +18,9 @@
 
 .btn:hover,
 .btn:active,
-.btn:focus {
+.btn:focus,
+.btn--institutional,
+.btn--contato {
   border-color: var(--color-primary);
   background-color: var(--color-primary);
   color: #fff;
@@ -28,16 +30,21 @@
                 /* Botão section Institucional */
 
 .btn--institutional {
-border-color: var(--color-primary);
-background-color: var(--color-primary);
-color: #fff;
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
+  color: #fff;
 }
 
-.btn--institutional:hover {
-color: var(--color-copy);
-background: unset;
+.btn--institutional:hover,
+.btn--contato:hover {
+  color: var(--color-copy);
+  background: unset;
+  box-shadow: 0 1rem 1rem #0006; /* EFEITO SOMBRA NO BOTÃO ( x, y, blur, cor */
 }
 
+.btn--contato:hover {
+  color: #fff;
+}
 
                 /* Botão section Cotação */
 .btn--quote {
