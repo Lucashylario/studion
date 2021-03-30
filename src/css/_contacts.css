@@ -18,7 +18,7 @@
     padding: 4rem 0;
 }
 
-                /* Sessão "Liga pra gente" */
+                /* Seção "Liga pra gente" */
 
 .contato__info i {
     font-size: 1.5rem;
@@ -46,7 +46,7 @@
     padding-right: 7.125rem;
 }
 
-                /* Sessão de "DEIXE SUA MENSAGEM" */
+                /* Seção de "DEIXE SUA MENSAGEM" */
 
 .contato__form__container {
     padding-left: 7.125rem;
@@ -85,4 +85,11 @@
 
 .contato__form button {
     float: right; /* mover botão para direita */
+}
+
+                /* Estilização do mapa */
+
+.maps, .maps iframe {
+    height: 36.5rem;
+
 }

@@ -77,7 +77,7 @@
   font-size: 1.25rem;
 }
 
-/* Sessão institutional */
+/* Seção institutional */
 
 .institutional {
   display: grid;
@@ -120,7 +120,7 @@
 }
 
 
-/* Sessão Cotação */
+/* Seção Cotação */
 
 .quote {
   /* Efeito Parallax */
@@ -128,7 +128,7 @@
   /* min-height: 80vh;  transferido para o "quote__container" */
   background-attachment: fixed; /* Efeito parallax onde a imagem fica fixa no plano de fundo e a pág rola por cima */
   background-repeat: no-repeat;
-  background-size: cover; /* Faz com que a imagem ocupe toda a área da sua sessão */
+  background-size: cover; /* Faz com que a imagem ocupe toda a área da sua Seção */
   background-position: center;
 }
 

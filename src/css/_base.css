@@ -17,7 +17,7 @@ body {
 header,
 main,
 footer {
-  overflow-x: clip; /* faz com que o conteúdo de uma sessão não ultrapasse seu limite */
+  overflow-x: clip; /* faz com que o conteúdo de uma seção não ultrapasse seu limite */
 }
 
 /* Estilização padrão para todas as listas */

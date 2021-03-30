@@ -16,7 +16,7 @@
   }
 
 .hero__copy { /* info da banner */
-    position: absolute; /* deixa a caixa de texto livre pra posicionar dentro da sessão */
+    position: absolute; /* deixa a caixa de texto livre pra posicionar dentro da Seção */
     bottom: 0; /* joga a section para baixo */
     right: 0; /* joga para a direita */
     width: 50%; /* ocupa metade da tela */
