@@ -1,3 +1,7 @@
+Linguagem: HTML5, CSS e JavaScript
+Bibliotecas: Slick
+Frameworks: JQuery
+
 Comandos GIT:
 
 git add. = adicionar arquivos modificados

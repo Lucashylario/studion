@@ -11,6 +11,15 @@
   /* background-position: center; Centralizar imagem */
 }
 
+.slider__prev-arrow { /* Estilo do botão do slide */
+  z-index: 1;
+  left: 0; /*Colar cetinha na esquerda*/
+}
+
+.slider__next-arrow { /* Estilo do botão do slide */
+  right: 0; /*Colar cetinha na direita*/ 
+}
+
 .slide {
   position: relative; /* "relative" faz com que o conteúdo de dentro da class "slide" não seja movida para fora de sua delimitação */
 
