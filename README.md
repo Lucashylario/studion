@@ -1,6 +1,5 @@
 Linguagem: HTML5, CSS e JavaScript
-Bibliotecas: Slick
-Frameworks: JQuery
+Bibliotecas: JQuery, Slick
 
 Comandos GIT:
 
