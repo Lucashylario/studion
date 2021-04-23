@@ -11,13 +11,35 @@
   /* background-position: center; Centralizar imagem */
 }
 
+.slider__prev-arrow,
+.slider__next-arrow { /* Criando botões para o slide */
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 5px solid #fff;
+  
+  border-right: unset; /*criando seta*/
+  border-bottom: unset; /*criando seta*/
+
+  opacity: 0.5; /* opacidade da ceta */
+}
+
 .slider__prev-arrow { /* Estilo do botão do slide */
   z-index: 1;
-  left: 0; /*Colar cetinha na esquerda*/
+  left: 1rem; /*posicionar cetinha na esquerda*/
+
+  transform: rotate(-45deg); /*rotacionar seta esquerda*/
 }
 
 .slider__next-arrow { /* Estilo do botão do slide */
-  right: 0; /*Colar cetinha na direita*/ 
+  right: 1rem; /*posicionar cetinha na direita*/ 
+
+  transform: rotate(135deg); /*rotacionar seta direita*/
+}
+
+.slider__prev-arrow::before, /* Com o pseudo seletor "before" é possível criar html dentro do css */
+.slider__next-arrow::before { /*Estilizando botões do slide*/
+  content: " "; /* sem conteúdo para desaparecer o botão padrão do slick */
+  /*"content" é utilizado para digitar algo dentro de "aspas" e esse conteúdo é transformado em HTML*/
 }
 
 .slide {
