@@ -109,14 +109,22 @@
 }
 
 /* Seção institutional */
-
+/* Mobile */
 .institutional {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-rows: auto auto; /* joga o conteúdo para baixo da imagem */
   gap: 3.125rem; /*Define espaçamento entre um elemento e outro */
   align-items: center; /* centralizar conteúdo */
 
-  padding: 4.375rem;
+  padding: 0 0 4.375rem 0;
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  .institutional {
+    grid-template-columns: auto auto;
+    padding: 4.375rem;
+  }
 }
 
 .institutional__image {
@@ -124,7 +132,14 @@
 }
 
 .institutional__copy {
-  padding: 0 1.875rem;
+  padding: 0 0 1.875rem 0; /* mobile */
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  .institutional__copy {
+    padding: 0 1.875rem;
+  }
 }
 
 .institutional__copy h6 {
