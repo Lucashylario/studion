@@ -2,11 +2,27 @@
   box-sizing: border-box;
 }
 
+/* Mobile */
 :root {
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  font-size: 4.25vw; /* o valor em "VW" ajustará as fontes conforme o tamanho do aparelho */
 
   color: var(--color-copy);
+}
+
+/* Tablet */
+@media screen and (min-width: 720px) {
+  :root {
+    font-size: 2.25vw;
+  }
+}
+
+
+/* Desktop */ /* "min-width" largura minima de até 1280px, abaixo disso a confifguaração de estilo da página muda */
+@media screen and (min-width: 1280px) {
+  :root {
+    font-size: 16px;
+  }
 }
 
 body {
