@@ -1,0 +1,23 @@
+/* LOGO "STUDION" */
+
+.logo-studion {
+    font-size: 2.375rem;
+    font-weight: 900;
+    line-height: 1ch; /* Ajusta a o espaçamento entre uma linha a outra */
+  
+    text-transform: uppercase;
+    text-align: right; /* alinhar texto a direita */
+  }
+  
+  .logo-studion__subtitle {
+    font-size: 0.875rem;
+    font-weight: 300;
+  
+    /*float: right;  para que a palavra eventos "flutue" e seja posicionado à direita */
+  }
+  
+  .logo-studion a {
+    text-decoration: none; /* para tirar a linha do link */
+    color: #fff;
+  }
+  
