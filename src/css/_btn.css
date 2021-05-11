@@ -29,13 +29,15 @@
 
                 /* Botão section Institucional */
 
-.btn--institutional {
+.btn--institutional,
+.btn--quote {
   display: block;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 1280px) {
-  .btn--institutional {
+  .btn--institutional,
+  .btn--quote {
     display: inline;
   }
 }

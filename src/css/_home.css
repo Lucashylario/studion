@@ -223,32 +223,59 @@
 
 /* Seção Cotação */
 
+/* Mobile */
 .quote {
   /* Efeito Parallax */
   background-image: url(../images/parallax.jpg);
-  /* min-height: 80vh;  transferido para o "quote__container" */
-  background-attachment: fixed; /* Efeito parallax onde a imagem fica fixa no plano de fundo e a pág rola por cima */
   background-repeat: no-repeat;
-  background-size: cover; /* Faz com que a imagem ocupe toda a área da sua Seção */
-  background-position: center;
+  background-size: auto 40%; 
+  background-position: 40% top;
 }
 
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  .quote {
+    /* Efeito Parallax */
+    background-attachment: fixed; /* Efeito parallax onde a imagem fica fixa no plano de fundo e a pág rola por cima */
+    background-size: cover; /* Faz com que a imagem ocupe toda a área da sua Seção */
+    background-position: center;
+  }
+}
+
+/* Mobile */
 .quote__container {
   display: grid;
-  align-items: center;
+  align-items: end;
   justify-items: end;
 
   min-height: 80vh;
 }
 
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  .quote__container {
+    align-items: center;
+
+  }
+}
+
+/* Mobile */
 .quote__copy {
   background-color: #fff;
 
-  padding: 5.625rem 4.375rem;
+  padding: 1rem;
+  padding-bottom: 4rem;
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  .quote__copy {
+    padding: 5.625rem 4.375rem;
+  }
 }
 
 .quote__copy h6 {
-  font-size: 0.9375rem;
+  font-size: 0.8rem;
   font-weight: 400;
 
   letter-spacing: 0.1875rem;
@@ -261,10 +288,10 @@
 }
 
 .quote__copy h2 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 700;
 
-  line-height: 5rem;
+  line-height: 4rem;
   letter-spacing: -0.1875rem;
 
   text-transform: uppercase;
@@ -274,4 +301,16 @@
 
 .quote__copy h2 span {
   display: block; /* Quebrar linha */
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  .quote__copy h6 {
+    font-size: 0.9375rem;
+  }
+
+  .quote__copy h2 {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
 }
