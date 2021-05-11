@@ -30,9 +30,14 @@
                 /* Botão section Institucional */
 
 .btn--institutional {
-  border-color: var(--color-primary);
-  background-color: var(--color-primary);
-  color: #fff;
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1280px) {
+  .btn--institutional {
+    display: inline;
+  }
 }
 
 .btn--institutional:hover,
