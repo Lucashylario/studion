@@ -1,4 +1,14 @@
 $(document).ready(() => {
+
+    // Menu Mobile
+    $('.navbar__menu-btn').on('click', function () {
+        $('.navbar__links').toggleClass("active"); /* "toggleClass" adiciona uma classe (active) na tag "ul" com a class ".navbar__menu-btn" para fazer o menu aparecer no mobile */
+        $(this).find("i").toggleClass('fa-bars');
+        $(this).find("i").toggleClass('fa-times'); /* adicionou um "X" para fechar o menu mobile */
+    });
+
+
+    // Carousel
     /* ----- Script do Slide Banner ----- */
     const slickOptions = {
         autoplay: true, /*Ativa arolagem do slide auto*/
