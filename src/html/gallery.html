@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
+    <title>Galeria</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container navbar__container"> <!-- Tag de Navegação (menu)-->
+            <h1 class="logo-studion">
+                Studi<span class="copy--primary">on</span>
+                <span class="logo-studion__subtitle">Eventos</span>
+            </h1> 
+            
+            <ul class="navbar__links">                
+                <li>
+                    <a href="../index.html">Home</a> 
+                </li>
+                <li>
+                    <a href="#">Empresa</a>
+                </li>
+                <li>
+                    <a href="#">Eventos</a>
+                </li>
+                <li>
+                    <a href="../html/gallery.html" class="active">Galeria</a>
+                </li>
+                <li>
+                    <a href="#">Depoimento</a>
+                </li>
+                <li>
+                    <a href="../html/contato.html">Contato </a>
+                </li>
+            </ul>
+
+            <button class="navbar__menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <img src="../images/galeria/_banner-gallery.jpg" alt="banner galeria" class="hero__background" />
+        <div class="container hero__container">
+          <div class="hero__copy">
+            <h2>.galeria</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste nobis
+              deserunt natus illo minima! Assumenda accusamus repellat sequi natus
+              laborum saepe suscipit, aspernatur error rem. 
+            </p>
+          </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="photo">
+                <div class="row-photo">
+                    <img src="../images/galeria/_photo1.jpg" alt="">
+                    <img src="../images/galeria/_photo2.jpg" alt="">
+                    <img src="../images/galeria/_photo3.jpg" alt="">
+                </div>
+
+                <div class="row-photo">
+                    <img src="../images/galeria/_photo4.jpg" alt="">
+                    <img src="../images/galeria/_photo5.jpg" alt="">
+                </div>
+
+                <div class="row-photo">
+                    <img src="../images/galeria/_photo6.jpg" alt="">
+                    <img src="../images/galeria/_photo7.jpg" alt="">
+                    <img src="../images/galeria/_photo8.jpg" alt="">
+                </div>
+
+                <div class="row-photo">
+                    <img src="../images/galeria/_photo9.jpg" alt="">
+                    <img src="../images/galeria/_photo10.jpg" alt="">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer"> <!-- TAG de rodapé da página -->
+
+        <div class="container footer__container">
+            <h2 class="logo-studion">
+                Studi<span class="copy--primary">on</span>
+                <span class="logo-studion__subtitle">Eventos</span>
+            </h2> 
+    
+            <form class="footer__form"> <!-- Tag para criar campos de formulário-->
+                <label for="email">receba news e promoções</label> <!-- título do form -->
+                
+                <div class="footer__email">
+                    <input id="email" type="email" placeholder="e-mail"/> <!--"input" cria a caixa de digitação (placeholder serve para aparecer dica na caixa de digitação doque que deve ser colocado)-->
+                    <button class="footer__form-button" type="submit">
+                        <i class="fas fa-paper-plane fa-2x"></i>
+                    </button>
+                </div>
+
+            </form>
+    
+            <ul class="footer__social">
+                <li>
+                    <a href="http://facebook.com/" target="_blank">  <!-- "target="_blank"" faz com que ao clicar no botão, abra uma nova aba -->
+                        <i class="fab fa-facebook fa-2x"></i> 
+                    </a>
+                </li> 
+                
+                <li>
+                    <a href="http://twitter.com/" target="_blank"> 
+                        <span class="fa-stack">
+                           <i class="fas fa-circle fa-stack-2x fa-inverse"></i>
+                           <i class="fab fa-twitter fa-stack-1x"></i>
+                        </span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="http://youtube.com/" target="_blank">
+                        <i class="far fa-play-circle fa-2x"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <hr /> <!-- Cria uma barrinha horizontal -->
+
+        <p>
+            <small> <!-- Esta tag serve para deixar o texto pequeno -->
+                studi<span class="copy--primary">on</span> - Todos os direitos reservados.
+            </small> 
+        </p>
+
+    </footer>
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> <!--Importação da biblioteca Slick para o slide-->
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script> <!-- Biblioteca SMTPJS para inserir emails -->
+
+    <script src="./script.js"></script>
+</body>
+</html>
