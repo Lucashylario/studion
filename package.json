@@ -1,6 +1,6 @@
 {
   "name": "studion",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Site de eventos",
   "main": "src/index.html",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Lucashylario/studion"
+    "url": "git+https://github.com/Lucashylario/studion.git"
   },
   "keywords": [
     "HTML",
@@ -20,5 +20,9 @@
   "license": "ISC",
   "devDependencies": {
     "live-server": "^1.2.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/Lucashylario/studion/issues"
+  },
+  "homepage": "https://github.com/Lucashylario/studion#readme"
 }
