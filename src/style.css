@@ -13,5 +13,11 @@
 @import "./css/_footer.css";
 
 @import "./css/_home.css";
+@import "./css/_event.css";
+
 @import "./css/_contacts.css";
 @import "./css/_gallery.css";
+
+body {
+    font-family: "Montserrat", sans-serif;
+}

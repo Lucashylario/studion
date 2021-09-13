@@ -1,0 +1,128 @@
+.main-events {
+    padding: 47px 0;
+}
+
+.faq {
+    display: grid;
+    grid-template-columns: 1fr 7fr 3fr;
+    overflow: hidden;
+
+    padding: 50px 0;
+
+    border-bottom: 0.3px solid rgba(138, 138, 138, 0.39);
+    cursor: pointer;
+}
+
+/*
+.faq:hover {
+    
+}
+*/
+.faq img {
+    padding: 0 58px;
+}
+
+.event-info h1 {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    letter-spacing: 4px;
+
+    padding-top: 35px;
+    padding-bottom: 25px;
+    margin: 0;
+}
+
+.event-info h2 i {
+    font-size: 20px;
+    color: var(--color-primary);
+}
+
+.event-info h2 {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 4px;
+
+    padding-bottom: 25px;
+    margin: 0;
+}
+
+.event-info p {
+    font-size: 17px;
+
+    margin: 0;
+}
+
+.button-event {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.btn-event {
+    width: 214px;
+    font-size: 15px;
+    font-weight: 600;
+
+    background-color: var(--color-primary);
+    color: #fff;
+
+    text-align: center;
+    text-decoration: none;
+
+    padding: 19px 0;
+    margin: 0;
+}
+
+.btn-event:hover {
+    background-color: var(--color-primary-hover);
+    border: none;
+}
+
+/*-----------------------------*/
+/*Acordion*/
+.info-show {
+    width: 580px;
+
+/*Acordion*/
+    max-height: 0; 
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+/*Acordion*/
+.faq.active .info-show {
+    max-height: 300px;
+}
+
+.info-show p {
+    width: 780px;
+    font-size: 15px;
+    font-weight: 400;
+
+    padding-top: 30px;
+}
+
+.address {
+    display: flex;
+    margin: 30px 0 0 0;
+}
+
+.address i {
+    font-size: 40px;
+    margin-right: 20px;
+    color: var(--color-primary);
+}
+
+.address h2 {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+.address h2 span {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0;
+}
+
