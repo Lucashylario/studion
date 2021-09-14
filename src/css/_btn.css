@@ -1,4 +1,19 @@
 /* Botão-Banner */
+.btn--slide a {
+  text-decoration: none;
+  color: unset;
+}
+
+.institutional__copy a {
+  text-decoration: none;
+  color: unset;
+}
+
+.quote__copy a {
+  text-decoration: none;
+  color: unset;
+}
+
 .btn {
   cursor: pointer;
   padding: 1rem 2.5rem;
@@ -44,7 +59,7 @@
 
 .btn--institutional:hover,
 .btn--contato:hover {
-  color: var(--color-copy);
+  color: var(--color-copy) !important;
   background: unset;
   box-shadow: 0 1rem 1rem #0006; /* EFEITO SOMBRA NO BOTÃO ( x, y, blur, cor */
 }
